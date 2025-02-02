@@ -184,7 +184,7 @@
                 // Add user question to chat
                 addMessage(question, 'user');
 
-                const response = await fetch('http://localhost:5000/ask', {
+                const response = await fetch('https://cfd-chat-beta-1-4.onrender.com/ask', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
