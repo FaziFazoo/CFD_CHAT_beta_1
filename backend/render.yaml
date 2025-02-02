@@ -6,4 +6,4 @@ services:
     startCommand: "gunicorn --timeout 120 app:app"
     envVars:
       - key: OPENROUTER_API_KEY
-        value: "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"
+        value: "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"
