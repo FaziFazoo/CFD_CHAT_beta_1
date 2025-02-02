@@ -134,7 +134,7 @@ CFD_KEYWORDS = [keyword.lower() for keyword in [
     # Emerging Trends
     "Digital twins", "Machine learning in CFD", "AI-driven meshing",
     "Reduced Order Models (ROM)", "Unsteady RANS (URANS)", "LES-WMLES",
-    "Hybrid RANS-LES", "Scale-resolving simulations", "Quantum CFD"
+    "Hybrid RANS-LES", "Scale-resolving simulations", "Quantum CFD","what is Ansys","How it works","Explain in detail","explain more","ansys","Ansys","flow","cam","CAM","finite element"
 ]]
 
 CFD_KEYWORDS_SET = set(CFD_KEYWORDS)
