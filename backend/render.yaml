@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: cfd-chatbot
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn --timeout 120 app:app"
+    envVars:
+      - key: OPENROUTER_API_KEY
+        value: "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"

@@ -8,6 +8,8 @@ __pycache__/
 
 # Ignore environment files
 
+.env
+
 
 # Ignore Node.js dependencies (if using frontend)
 frontend/node_modules/
