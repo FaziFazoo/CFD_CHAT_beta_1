@@ -105,7 +105,7 @@ def ask():
         headers = {
             "Authorization": f"Bearer {API_KEY}",
             "Content-Type": "application/json",
-            "HTTP-Referer": "https://cfd-chat-beta-1-4.onrender.com",  # Required by OpenRouter
+            "HTTP-Referer": "https://cfd-chat-beta-1-5.onrender.com",  # Required by OpenRouter
             "X-Title": "CFD Assistant"  # Identifier for your app
         }
 
