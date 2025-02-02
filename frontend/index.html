@@ -162,6 +162,7 @@
         const chatBox = document.getElementById('chat-box');
         const questionInput = document.getElementById('question-input');
         const loading = document.getElementById('loading');
+        const sendBtn = document.getElementById('send-btn');
 
         // Handle Enter key press
         questionInput.addEventListener('keypress', (e) => {
@@ -174,8 +175,9 @@
             const question = questionInput.value.trim();
             if (!question) return;
 
-            // Clear input and show loading
+            // Clear input, disable button, and show loading
             questionInput.value = '';
+            sendBtn.disabled = true;
             loading.style.display = 'block';
 
             try {
@@ -202,6 +204,8 @@
             } catch (error) {
                 handleError(error.message);
             } finally {
+                // Re-enable button and hide loading
+                sendBtn.disabled = false;
                 loading.style.display = 'none';
             }
         }
